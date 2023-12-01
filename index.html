@@ -7,6 +7,7 @@
     <title>Justin Sell's Portfolio</title>
 </head>
 <body>
+<!--The Nav Bar is formatted as an unordered list. It will display horizontally on larger screen sized and vertically on smaller ones.-->
     <div id="nav-bar">
         <ul>
             <a href="#"><li>About Me</li></a>
@@ -15,12 +16,15 @@
             <a href="#"><li>Contact</li></a>
         </ul>
     </div>
+<!--The Flex Container contains four sections, assigned with 'box' classes. Each section has an ID so it can be independently styled. The box classes allow me to apply common styles.-->
     <section class="flex-container">
+<!--The About Me Section, there are articles for bio picture and bio text so they can be indivudally styled and flexed in the container-->
 <section id="about-me" class="box"><h2>About Me</h2>
     <article class="bio-pic"><img class= "avatar" src="profile.png" alt="A portrait of myself."></article>
     <article class="bio-text"><p>I've been an employee of Liberty Mutual since 2008. Currently, I work in the Office of Business Agility as an Associate Product Owner. My current assignment is maintaining rules for managed care and bill review applcations.</p>
     <p>I have a Master's Degree in Education as well as a Bachelor's Degree in Communications.</p><p>I'm really bad at FlexBox layouts and building compelling content so I'll have to keep working on that. I don't have much more to say so Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque eum non architecto, ipsam reiciendis tenetur beatae perspiciatis cum sequi, id, laborum sunt minus similique maiores cumque distinctio nesciunt nemo!.</p></article>
 </section>
+<!--The Skills Section-->
 <section id="skills" class="box"><h2>Skills</h2>
 <ul>
     <li>HTML</li>
@@ -31,13 +35,17 @@
     <li>Dev Ops</li>
 </ul>
 </section>
+<!--The Projects Section-->
 <section id="projects" class="box"><h2>Projects</h2>
-<article class="project-card"><img src="project-1.jpg" alt=""><h3>Project Management</h3><p>This is a picture I found on Unsplash.com when I searched for project. It appears to be employees in the process of planning and collaborating.</p></article>
-<article class="project-card"><img src="project-2.jpg" alt=""><h3>A Second Project</h3><p>This is the second picture I found when searching for projects. It appears to be the words 'PROJECTS' on a wall. Projects can be intimidating, so I don't think I want to go wherever this is.</p></article>
-<article class="project-card"><img src="project-3.jpg" alt=""><h3>Construction</h3><p>This also appears to be folks collaborating, but this time, they are working on blueprints. I'm not good at building things but I'll use this picture anyways.</p></article>
+<!--Each Individual Project is assigned to a 'Project Card' class so they can be styled.-->
+<article class="project-card"><img src="project-1.jpg" alt="A collaboration session with a whiteboard a post-it notes."><h3>Project Management</h3><p>This is a picture I found on Unsplash.com when I searched for project. It appears to be employees in the process of planning and collaborating.</p></article>
+<article class="project-card"><img src="project-2.jpg" alt="A colorful wall with a 3D sign that reads 'PROJECTS.'"><h3>A Second Project</h3><p>This is the second picture I found when searching for projects. It appears to be the words 'PROJECTS' on a wall. Projects can be intimidating, so I don't think I want to go wherever this is.</p></article>
+<article class="project-card"><img src="project-3.jpg" alt="People are working on a blueprint, only their hands are visible."><h3>Construction</h3><p>This also appears to be folks collaborating, but this time, they are working on blueprints. I'm not good at building things but I'll use this picture anyways.</p></article>
 </section>
+<!--Each Individual Project is assigned to a 'Project Card' class so they can be styled.-->
 <section id="contact" class="box"><h2>Contact</h2>
-<form action="mailto:jsell@mail.usf.edu" method="post">
+<!--The contact section which has been built as a form. The post method should prefill a subject line. Required fields are not enforced here.-->
+<form action="mailto:jsell@mail.usf.edu?subject=Feedback on your site" method="post">
     <label for="name">Name: </label><br>
     <input type="text" id="name" name="name"><br>
     <label for="name">Email: </label><br>
